@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/vertex-pursuit-games.iml" filepath="$PROJECT_DIR$/vertex-pursuit-games.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vpg.iml" filepath="$PROJECT_DIR$/vpg.iml" />
     </modules>
   </component>
 </project>

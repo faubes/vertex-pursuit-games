@@ -1,5 +1,6 @@
-package cnr;
+package vpg;
 
+import vpg.graphgenerators.*;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
@@ -13,7 +14,7 @@ import edu.uci.ics.jung.algorithms.generators.*;
 import edu.uci.ics.jung.algorithms.generators.random.*;
 import edu.uci.ics.jung.graph.util.*;
 
-public class CopsAndRobbersBasic {
+public class CopsAndRobbersConsole {
 
 
 //	public static boolean checkForWin(Integer[] cops, Integer robber) {
@@ -26,7 +27,7 @@ public class CopsAndRobbersBasic {
 //		return win;
 //	}
 
-//	public CopsAndRobbersBasic() {
+//	public CopsAndRobbersConsole() {
 //		copNumber = 1;
 //		copPositions = new HashSet<String>();
 //	}
@@ -55,7 +56,7 @@ public class CopsAndRobbersBasic {
 	// Supplier<String> vertexFactory = new Supplier<String>() {
 	// int i=0;
 	// public String get() {
-	// return "V"+i++;
+	// return +i++;
 	// }
 	// };
 	//
@@ -80,8 +81,9 @@ public class CopsAndRobbersBasic {
 		
 		Scanner scanner = new Scanner(System.in);
 
-		g = GraphGenerator.generateOuterPlanarGraph4();
-		
+		// g = SampleGraphGenerator.generateOuterPlanarGraph4();
+		g = GridGenerator.generateGridGraph(5, 5);
+
 		boolean won = false;
 		
 		// Graph<String, Integer> g2 = generateFunkyGraph();
@@ -114,7 +116,7 @@ public class CopsAndRobbersBasic {
 			}
 		}
 		
-		copPositions = new Integer[copNumber]; // vertices are strings of form "V"+k
+		copPositions = new Integer[copNumber]; // vertices are strings of form k
 
 		System.out.println("Cops start by selecting " + copNumber + " vertices.");
 
@@ -186,7 +188,7 @@ public class CopsAndRobbersBasic {
 						System.out.print("Enter move for cop " + i + ": ");
 						input = scanner.nextLine();
 						int newPosition = Integer.parseInt(input);
-						if (neighbours.contains("V"+newPosition)) {
+						if (neighbours.contains(newPosition)) {
 							copPositions[i] = newPosition;
 							valid = true;
 							if (newPosition == robberPosition) {
@@ -222,7 +224,7 @@ public class CopsAndRobbersBasic {
 						System.out.print("Enter move robber: ");
 						input = scanner.nextLine();
 						int newPosition = Integer.parseInt(input);
-						if (neighbours.contains("V"+newPosition)) {
+						if (neighbours.contains(newPosition)) {
 							robberPosition = newPosition;
 							valid = true;
 						} else {

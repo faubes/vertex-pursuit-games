@@ -1,10 +1,11 @@
-package cnr;
+package vpg.graphgenerators;
 
 import java.util.HashSet;
 
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.SparseMultigraph;
 import edu.uci.ics.jung.graph.util.Pair;
+import vpg.graphgenerators.SampleGraphGenerator;
 
 public class GraphProduct<V,E> {
 
@@ -35,8 +36,8 @@ public class GraphProduct<V,E> {
 
 
 public static void main(String[] argz) {
-	Graph<Integer, Integer> g = GraphGenerator.generateOuterPlanarGraph5();
-	Graph<Integer, Integer> h = GraphGenerator.generateOuterPlanarGraph5();
+	Graph<Integer, Integer> g = SampleGraphGenerator.generateOuterPlanarGraph5();
+	Graph<Integer, Integer> h = SampleGraphGenerator.generateOuterPlanarGraph5();
 	
 	Graph<Pair<Integer>, Integer> gh = (Graph<Pair<Integer>, Integer>)StrongProduct(g, h);
 	System.out.println(gh);

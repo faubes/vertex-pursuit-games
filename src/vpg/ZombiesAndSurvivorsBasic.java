@@ -1,19 +1,13 @@
-package cnr;
+package vpg;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
-import java.util.Set;
-
-import com.google.common.base.Supplier;
 
 import edu.uci.ics.jung.graph.*;
-import edu.uci.ics.jung.algorithms.generators.*;
-import edu.uci.ics.jung.algorithms.generators.random.*;
 import edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath;
-import edu.uci.ics.jung.graph.util.*;
+import vpg.graphgenerators.SampleGraphGenerator;
 
 public class ZombiesAndSurvivorsBasic {
 	
@@ -32,7 +26,7 @@ public class ZombiesAndSurvivorsBasic {
 		// Graph<V, E> where V is the type of the vertices
 		// and E is the type of the edges
 
-		g = GraphGenerator.generateOuterPlanarGraph5();
+		g = SampleGraphGenerator.generateOuterPlanarGraph5();
 
 		DijkstraShortestPath<Integer, Integer> alg = new DijkstraShortestPath<Integer, Integer>(g);
 

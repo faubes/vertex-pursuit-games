@@ -1,12 +1,12 @@
-package cnr;
+package vpg;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 import edu.uci.ics.jung.graph.Graph;
-import edu.uci.ics.jung.graph.SparseMultigraph;
 import edu.uci.ics.jung.graph.util.Pair;
+import vpg.graphgenerators.SampleGraphGenerator;
 
 public class ZombiesAndSurvivorsUtils {
 	
@@ -15,7 +15,8 @@ public class ZombiesAndSurvivorsUtils {
 			System.out.println(Arrays.toString(array[i]));
 		}
 	}
-	
+
+	/* O(n^3) all pairs shortest paths */
 	public static int[][] FloydWarshall(Graph<Integer, Integer> g) {
 		
 		// need order of graph to size array
@@ -26,6 +27,7 @@ public class ZombiesAndSurvivorsUtils {
 		
 		// distance from x to x is zero
 		// presume x not connected to y if x != y
+		// Warning: using MAX_VALUE to represent infinity. Potential for bugs?
 		for (int i = 0; i < n * n; i++) {
 			if (i % n == i /n) {
 				d[i % n][ i / n] = 0;
@@ -91,7 +93,7 @@ public class ZombiesAndSurvivorsUtils {
 	
 	public static void main(String[] args) {
 	
-		Graph<Integer, Integer> g = GraphGenerator.generateExampleGraph();
+		Graph<Integer, Integer> g = SampleGraphGenerator.generateExampleGraph();
 		
 		int[][] d = FloydWarshall(g);
 		

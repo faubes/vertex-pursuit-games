@@ -1,31 +1,11 @@
-package cnr;
+package vpg.graphgenerators;
 
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.SparseMultigraph;
 
-public class GraphGenerator {
+public class SampleGraphGenerator {
 
-	
-	public static Graph<Integer, Integer> generateGridGraph(int m, int n) {
-		// non functional. Need to rethink how to draw edges.
-		Graph<Integer, Integer> g = new SparseMultigraph<Integer, Integer>();
-		
-		
-		for (int i = 0; i < m; i++) {
-			for (int j = 0; j < n; j++) {
-				g.addVertex(i+j);
-			}
-		}
-		
-		for (int i = 0; i < m; i++) {
-			for (int j = 0; j < n; j++) {
-				g.addEdge(g.getEdgeCount() +1, (i+1)*j, (i+1)*j +1);
-				
-			}
-		}
-		return g;
-	}
-	
+
 	public static Graph<String, Integer> generateSimpleGraph() {
 		// Create basic graph
 		Graph<String,Integer> g = new SparseMultigraph<String, Integer>();

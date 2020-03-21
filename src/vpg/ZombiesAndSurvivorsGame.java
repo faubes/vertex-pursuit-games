@@ -1,32 +1,24 @@
-package cnr;
+package vpg;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.Timer;
 
-import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JRootPane;
 
-import com.google.common.base.Functions;
-
 import edu.uci.ics.jung.algorithms.layout.*;
 import edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath;
-import edu.uci.ics.jung.graph.DirectedSparseMultigraph;
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.ObservableGraph;
-import edu.uci.ics.jung.graph.SparseMultigraph;
 import edu.uci.ics.jung.graph.event.GraphEvent;
 import edu.uci.ics.jung.graph.event.GraphEventListener;
-import edu.uci.ics.jung.graph.util.Graphs;
 import edu.uci.ics.jung.visualization.VisualizationViewer;
 import edu.uci.ics.jung.visualization.control.DefaultModalGraphMouse;
 import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
 import edu.uci.ics.jung.visualization.renderers.Renderer;
+import vpg.graphgenerators.SampleGraphGenerator;
 
 public class ZombiesAndSurvivorsGame extends javax.swing.JApplet {
 
@@ -85,7 +77,7 @@ public class ZombiesAndSurvivorsGame extends javax.swing.JApplet {
     public void init() {
 
         //create a graph
-    	Graph<Integer,Integer> ig = GraphGenerator.generateOuterPlanarGraph5();
+    	Graph<Integer,Integer> ig = SampleGraphGenerator.generateOuterPlanarGraph5();
 
         ObservableGraph<Integer,Integer> og = new ObservableGraph<Integer,Integer>(ig);
         og.addGraphEventListener(new GraphEventListener<Integer,Integer>() {

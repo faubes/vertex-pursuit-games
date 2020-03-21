@@ -1,4 +1,4 @@
-package cnr;
+package vpg;
 
 public class GraphPickingMouse {
 
