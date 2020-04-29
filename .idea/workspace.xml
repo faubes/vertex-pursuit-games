@@ -2,27 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc1f458-48ff-4e92-b458-d7ef72ecf8c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/ipe.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/polygon.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test.ipe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test2.ipe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/v7.ipe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vpg/graphgenerators/GraphLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vpg/graphgenerators/GridGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vpg/graphgenerators/OuterPlanarGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vpg/graphgenerators/VisibilityGraphGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/dismantlable.ipe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/dismantlable_polygon.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/idea9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/simpler_polygon.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/simpler_polygon2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/simpler_polygon3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/v10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/v11.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CopsAndRobbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vpg/CopsAndRobbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CopsAndRobbersBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vpg/CopsAndRobbersConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vpg/graphgenerators/SampleGraphGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphPickingMouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vpg/GraphPickingMouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vpg/graphgenerators/GraphProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ZombiesAndSurvivorsBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vpg/ZombiesAndSurvivorsBasic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ZombiesAndSurvivorsGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vpg/ZombiesAndSurvivorsGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ZombiesAndSurvivorsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vpg/ZombiesAndSurvivorsUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertex-pursuit-games.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vpg.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/vpg/vpg/graphgenerators/VisibilityGraphGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/vpg/vpg/graphgenerators/VisibilityGraphGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/polygon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/polygon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vpg/graphgenerators/VisibilityGraphGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vpg/graphgenerators/VisibilityGraphGenerator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +41,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
   </component>
   <component name="ProjectId" id="1Z2bgDtdbAoboaKuxiJhaADdRPI" />
   <component name="ProjectLevelVcsManager">
@@ -197,6 +193,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/vpg/graphgenerators/VisibilityGraphGenerator.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
